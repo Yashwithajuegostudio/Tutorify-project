@@ -1,190 +1,603 @@
-@import url('./constants.css');
-@import url('font.css');
-
+@import url("font.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,400&family=Nunito+Sans&family=Poppins:ital,wght@0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,400&family=Nunito+Sans&family=Poppins:ital,wght@0,400;1,500&family=Rubik&display=swap");
+/* Home page styles */
 .container {
-    width: 100%;
-  }
-  /* section styles */
-  .section1,
-  .section2,
-  .section3,
-  .section4,.section5 ,.section6, .section7{
-    display: flex;
-    padding: 2rem 3rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .section7 {
-    background: linear-gradient(270.04deg, #F1BF62 0.05%, #FF912E 97.84%);
-    border-radius: 0.5rem;
-  }
-  .row {
-    flex: 1;
-    padding-bottom: 1rem;
-  }
-  .section1 .row , .section3 .row {
-    padding-bottom: 2rem;
-  }
-  .row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  h1,h2{
-    font-size: 2rem;
-    font-family:'Poppins-medium'; 
-  }
-  .heading,
-  .para {
-    padding-top: 1rem;
-  }
-  .section4 .para {
-    text-align: end;
-  }
-  .section2 .heading{
-    padding-top: 1.5rem;
-  }
-  .textColor {
-    color: var(--green);
-  }
-  .section5 .textColor,.section6 .text-color{
-    color: var(--orange);
-  }
-  .para {
-    padding-bottom: 2rem;
-    font-family:'Poppins-light'; 
-    line-height: 2;
-    color: var(--para--text-color);
-  }
-  .section6 .heading{
-    color: var(--orange);
-  }
-  .section7 .heading,.section7 .para {
-color: var(--white);
-  }
-  .section6 .para, .section7 .para{
-    font-size: 0.9rem;
-  }
-  h3,
-  .text-color {
-    color: var(--orange);
-    font-family:'Poppins-medium'; 
-    white-space: nowrap;
-  }
-  .underline {
-    position: relative;
-      margin-left: 1rem;
-      margin-top: 0.7rem;
-      width: 5rem;
-      height: 0;
-      border: 0.01rem solid var(--underline--color);
-  }
-  .section1 .button {
-    background-color:var(--green);
-    font-size: 1.1rem;
-    font-family:'Poppins-bold'; 
-    border: none;
-    width: 15rem;
-    border-radius: 1rem;
-    padding: 1rem;
-  }
-  .section3 .button1,
-  .section1 .button {
-    color: var(--white);
-    font-family:'Poppins-medium'; 
-  }
-  .section3 .button1 {
-    background-color: var(--orange);
-    border: none;
-    margin-right: 2rem;
-  }
-  .section3 .button2 {
-    color:var(--orange);
-    background-color:var(--white);
-    border: 0.01rem solid var(--orange);
-    font-family:'Poppins-medium'; 
-  }
-  .section7 button{
-    width: 13rem;
-    color: var(--orange);
-    border-radius: 0.2rem;
-    border: none;
-    padding: 1rem;
-  }
-  .button1,
-  .button2 {
-    width: 10rem;
-    border-radius: 1rem;
-    padding: 1rem;
-  }
-  
-  img {
-    width: 100%;
-    display: inline-block;
-  }
-  .section1 .col2 {
-    padding: 1rem;
-    width: 15rem;
-    background-color: var(--orange);
-    border-radius: 9rem;
-  }
-  .section3 .col2 {
-    width: 15rem;
-    background-color: #bd7673;
-    border-radius: 10rem;
-  }
-  .section4 .col2 {
-    background: #E0E0E0;;
-    width: 18rem;
-    border-radius: 5rem;
-  }
-  .section5 .col2 {
-    border-radius: 5rem;
-  }
-  /* Fourth section cards style */
-  .card {
-    background: var(--white);
-    box-shadow: 0rem -0.2rem 8rem rgba(5, 142, 110, 0.14);
-    border-radius: 2rem;
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .card .greenInput {
-    accent-color: var(--green);
-   width: 1.5rem;
-   height: 2.5rem;
-   border-radius: 3rem;
-   margin-right: 1rem;
-  }
- .card label{
-    font-family:'Poppins-medium'; 
-    color:var(--card--text-color) ;
-    font-size: 0.8rem;
- }
- .card ul{
-    margin-top: 0.2rem;
-    color:var( --card--list--color);
-    font-size: 0.8rem;
-    font-family:'Poppins-light'; 
-    margin-left: 3.4rem;
- }
- /* fifth section cards style */
-.section5 label{
-    color: var(--orange);
+  width: 100%;
 }
-.section5 .card p{
-    color:var( --card--list--color);
-    font-family:'Poppins-light'; 
-    font-size: 0.8rem;
+/* section styles */
+.section {
+  display: flex;
+  padding: 2rem 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  overflow: hidden;
 }
-.section5 .card{
-    box-shadow: 0rem 0.2rem 23.4rem rgba(255, 146, 47, 0.15), 0px 0.500862px 44.7019px rgba(255, 146, 47, 0.075);
-    border-radius: 0.6;
+.getFreelessons {
+  background: linear-gradient(
+    270.04deg,
+    var(--gradiant--color) 0.05%,
+    var(--gradiant--orange--color) 97.84%
+  );
+  border-radius: 0.5rem;
+  margin-bottom: 7rem;
+  padding-top: 4rem;
 }
- 
+.row {
+  flex: 1;
+}
+.freeLessons .row,
+.bookLessons .row {
+  padding-bottom: 3rem;
+}
+.bookLessons {
+  padding-bottom: 0rem;
+}
+.itemsInRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  writing-mode: horizontal-tb;
+}
+h1,
+h2 {
+  font-size: 2rem;
+  font-family: "Poppins-medium";
+}
+.freeLessons .heading {
+  font-family: "Poppins-bold";
+  line-height: 3.3rem;
+  padding: 1rem 0rem 1.5rem 0rem;
+  letter-spacing: 0.035em;
+  display: block;
+  white-space: nowrap;
+}
+
+.para {
+  padding: 0.5rem 2rem 0.5rem 0rem;
+}
+.heading {
+  letter-spacing: 0.01rem;
+}
+.whatYouGet .para,
+.whatYouGet .heading {
+  text-align: end;
+}
+.whatYouGet .heading,
+.howItWorks .heading {
+  white-space: nowrap;
+}
+.whatYouGet .row {
+  margin-bottom: 1.5rem;
+}
+.whatYouGet .para {
+  padding: 0.5rem 0rem 0rem 1.8rem;
+}
+.whatYouGet li {
+  list-style: disc;
+  list-style-position: inside;
+}
+.whatWeOffer {
+  gap: 0.4rem;
+}
+.whatYouGet .textColor {
+  color: var(--green);
+}
+.whatYouGet {
+  padding-top: 4rem;
+}
+.orangeTextColor {
+  color: var(--orange);
+}
+.freeLessons .para {
+  font-size: 0.85rem;
+}
+.para {
+  padding-bottom: 2rem;
+  font-size: 0.75rem;
+  font-family: "Poppins-light";
+  line-height: 2;
+  color: var(--para--text-color);
+}
+.eduSmart .heading {
+  white-space: nowrap;
+  letter-spacing: 0.035rem;
+  display: block;
+}
+.eduSmart {
+  gap: 0rem;
+  padding-top: 4rem;
+}
+.eduSmart .para {
+  line-height: 2rem;
+}
+.getFreelessons .heading,
+.getFreelessons .para {
+  color: var(--white);
+}
+
+h3 {
+  font-size: 1rem;
+}
+h3,
+.text-color {
+  color: var(--orange);
+  font-family: "Poppins-medium";
+  white-space: nowrap;
+}
+.underline {
+  margin-left: 1.12rem;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+/* Free Lesson section image container design */
+.tutorImageContainer .tutorImage {
+  display: flex;
+  justify-content: right;
+}
+.tutorImageContainer .tutorImage .image {
+  width: 13rem;
+  background: linear-gradient(
+    139.15deg,
+    #f1c365 7.67%,
+    #f6ae54 40.13%,
+    #ff922f 59.18%
+  );
+  border-radius: 12.75rem;
+}
+.tutorImageContainer .container {
+  width: 16rem;
+  height: 19rem;
+  position: relative;
+}
+.flagList {
+  position: relative;
+  display: block;
+}
+.tutorImageContainer .flag1 {
+  width: 3rem;
+  border-radius: 3rem;
+  bottom: 15.8rem;
+  left: 2.3rem;
+}
+.tutorImageContainer .flag2 {
+  width: 3rem;
+  bottom: 21.5rem;
+  left: 11.2rem;
+}
+.tutorImageContainer .flag3 {
+  width: 3.5rem;
+  bottom: 16rem;
+  left: 14.5rem;
+}
+.tutorImageContainer .rectangle {
+  position: relative;
+  width: 6.7rem;
+  bottom: 15.4rem;
+  right: 1.3rem;
+  filter: drop-shadow(0px 4px 357px rgba(255, 146, 47, 0.63))
+    drop-shadow(0px 0.500862px 44.7019px rgba(255, 146, 47, 0.21));
+}
+.tutorImageContainer .rectangleLabel {
+  width: 4.5rem;
+  position: relative;
+  bottom: 19rem;
+  right: 0.2rem;
+}
+.tutorImageContainer .rectangleBar {
+  width: 1.2rem;
+  position: relative;
+  bottom: 20.5rem;
+  right: 1.8rem;
+}
+
+.tutor {
+  width: 1.7rem;
+  position: relative;
+}
+.tutorImageContainer .tutor1 {
+  bottom: 20.2rem;
+  right: 0.4rem;
+}
+.tutorImageContainer .tutor2 {
+  bottom: 22.2rem;
+  left: 0.4rem;
+}
+.tutorImageContainer .tutor3 {
+  bottom: 24.1rem;
+  left: 1.3rem;
+}
+.tutorImageContainer .tutor4 {
+  bottom: 26.1rem;
+  left: 2rem;
+}
+
+.tutorImageContainer .circle {
+  bottom: 28.2rem;
+  left: 2.8rem;
+}
+.tutorImageContainer .countLabel {
+  color: var(--white);
+  font-family: "Poppins-medium";
+  position: relative;
+  font-size: 0.65rem;
+  left: 3.3rem;
+  bottom: 29.8rem;
+}
+/* what We Offer section flag list */
+.columnContainer {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+}
+.columnContainer .itemsInRow {
+  gap: 1.3rem;
+}
+.whatWeOffer .heading {
+  padding: 0.5rem 0 0.5rem 0;
+  color: var(--heading--color);
+}
+.flags .flag {
+  width: 3.25rem;
+}
+.flags .image6 {
+  width: 3.5rem;
+}
+.rightArrow {
+  margin-top: 0.2rem;
+}
+.viewAll {
+  font-family: "Nunito Sans";
+  color: var(--orange);
+  margin-top: 1rem;
+}
+/* book Lessons image conatiner design */
+.btnsInrow {
+  display: flex;
+  gap: 1.5rem;
+}
+.bookLessons .image {
+  width: 14rem;
+  border-radius: 16rem;
+  position: relative;
+  right: 2rem;
+}
+.circle {
+  display: flex;
+  justify-content: right;
+}
+.bookLessons {
+  padding-top: 3rem;
+}
+.howItWorks {
+  padding-bottom: 4rem;
+}
+.bookLessons .container {
+  width: 18rem;
+  height: 19rem;
+  position: relative;
+}
+.bookLessons .person {
+  width: 12rem;
+  position: relative;
+  bottom: 14.35rem;
+  left: 1rem;
+  z-index: 1;
+}
+.bookLessons .outerCircle {
+  position: relative;
+  width: 18rem;
+  bottom: 32.4rem;
+  right: 0rem;
+}
+.bookLessons .card {
+  position: relative;
+  width: 4rem;
+  padding: 1.3rem;
+  bottom: 47.2rem;
+  right: 1.5rem;
+  background: var(--white);
+  box-shadow: 0rem 0.4rem 7.5rem rgba(251, 156, 70, 0.23),
+    0rem 0.1rem 1.1rem rgba(251, 156, 70, 0.0583613),
+    0rem 0.1rem 1rem rgba(251, 156, 70, 0.0811701);
+  border-radius: 0.5rem;
+}
+.bookLessons .heart {
+  position: relative;
+  width: 0.6em;
+  bottom: 51rem;
+  left: 0.4rem;
+}
+.bookLessons .lessonText {
+  position: relative;
+  width: 2em;
+  bottom: 51rem;
+  right: 0.3rem;
+}
+.bookLessons .smallCircle1 {
+  position: relative;
+  width: 11em;
+  bottom: 65rem;
+  right: 1.5rem;
+}
+.bookLessons .book {
+  position: relative;
+  width: 0.8rem;
+  bottom: 72.5rem;
+  left: 5.4rem;
+}
+.bookLessons .smallCircle2 {
+  position: relative;
+  width: 11em;
+  bottom: 67rem;
+  left: 8.6rem;
+}
+.bookLessons .security {
+  position: relative;
+  width: 0.8rem;
+  bottom: 74.5rem;
+  left: 15.5rem;
+}
+.bookLessons .learnerImage1 {
+  position: relative;
+  width: 11em;
+  bottom: 94rem;
+  left: 8.2rem;
+  overflow: hidden;
+}
+.bookLessons .learnerImage2 {
+  position: relative;
+  width: 13em;
+  bottom: 99rem;
+  right: 4.9rem;
+}
+/* what You Get image container design */
+
+.whatYouGet {
+  justify-content: left;
+}
+.whatYouGet .image {
+  width: 16.5rem;
+  border-radius: 2rem;
+  background-color: var(--background--color);
+}
+.whatYouGet .container {
+  width: 19rem;
+  height: 16rem;
+  position: relative;
+}
+.whatYouGet .person {
+  width: 19rem;
+  position: relative;
+  bottom: 20rem;
+  left: 0rem;
+}
+/* how It Works image conatiner design */
+.howItWorks {
+  justify-content: left;
+}
+.howItWorks .heading,
+.bookLessons .heading,
+.getFreelessons .heading {
+  margin-bottom: 0.9rem;
+}
+.getFreelessons .heading {
+  white-space: nowrap;
+  display: block;
+}
+
+.getFreelessons .para {
+  padding: 1rem 0rem 1rem 0rem;
+}
+.howItWorks .learner {
+  display: flex;
+  justify-content: flex-start;
+  width: 19.5rem;
+  border-radius: 5rem;
+}
+.howItWorks .container {
+  width: 20rem;
+  height: 14rem;
+  position: relative;
+}
+.howItWorks .videoIconCircle {
+  width: 2.5rem;
+  position: relative;
+  bottom: 10rem;
+  left: 9.5rem;
+}
+.howItWorks .videoIcon {
+  width: 0.8rem;
+  position: relative;
+  bottom: 12rem;
+  left: 10.4rem;
+}
+.howItWorks .triangle {
+  width: 10rem;
+  position: relative;
+  bottom: 12rem;
+  left: 10rem;
+}
+/* review design styles */
+.tutorReview {
+  display: flex;
+  width: 23rem;
+  margin-bottom: 2rem;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+.reviews p {
+  font-style: italic;
+  font-family: "Poppins-light";
+  color: var(--review--text--color);
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.tutorProfile .tutorImage {
+  width: 2.4rem;
+}
+.tutorProfile {
+  display: flex;
+  gap: 1rem;
+}
+.tutorProfile label {
+  color: var(--orange);
+  font-size: 0.7rem;
+  font-family: "Poppins-medium";
+}
+.tutorProfile p {
+  color: var(--designation--text--color);
+  font-family: "Poppins-medium";
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+}
+.quote {
+  width: 3.5rem;
+}
+.star i.fa {
+  color: var(--star--color);
+  margin-left: 0.3rem;
+  font-size: 0.85rem;
+}
+.paginationIndicator i.fa {
+  color: var(--pagination--default-color);
+  margin-left: 0.3rem;
+  font-size: 0.5rem;
+}
+.paginationIndicator i.fa.active {
+  color: var(--orange);
+}
+
+.tutorProfile .circle {
+  width: 1.5rem;
+  position: relative;
+  left: 4rem;
+  top: 0.5rem;
+}
+.swiper {
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 3.8rem;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 0.12em 0.45em;
+}
+/* get Free lessons  design styles*/
+.getFreelessons .smileEmoji {
+  font-size: 2rem;
+}
+.studentImageList {
+  align-items: flex-start;
+  position: relative;
+}
+.studentImageList .student1 {
+  position: absolute;
+  left: 0rem;
+}
+.studentImageList .student2 {
+  position: absolute;
+  left: 1.5rem;
+}
+.studentImageList .student3 {
+  position: absolute;
+  left: 3rem;
+}
+.studentImageList .student4 {
+  position: absolute;
+  left: 4.5rem;
+}
+.studentImageList .student5 {
+  position: absolute;
+  left: 6rem;
+}
+.studentImageList .text {
+  position: absolute;
+  padding-top: 0.7rem;
+  font-size: 0.75rem;
+  color: var(--white);
+  font-family: "Poppins-light";
+  text-underline-position: auto;
+  text-decoration: underline;
+  left: 9.5rem;
+}
+/* Fourth section cards style */
+.card {
+  background: var(--white);
+  box-shadow: 0rem -0.2rem 8rem rgba(5, 142, 110, 0.14);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem 0rem 1rem 0;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card input {
+  accent-color: var(--green);
+}
+.card .greenInput {
+  background-color: var(--green);
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  padding: 0.4em 0.4em;
+}
+.card label {
+  font-family: "Poppins-medium";
+  color: var(--card--text-color);
+  font-size: 0.75rem;
+}
+.card ul {
+  color: var(--card--list--color);
+  font-size: 0.62rem;
+  font-family: "Poppins-light";
+  line-height: 1.2rem;
+}
+.itemsIncol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* how It Works section cards style */
+.howItWorks label {
+  font-family: "Poppins-light";
+  font-size: 0.75rem;
+  color: var(--orange);
+}
+.howItWorks .card p {
+  color: var(--card--list--color);
+  font-family: "Poppins-light";
+  font-size: 0.6rem;
+}
+.howItWorks .card {
+  box-shadow: 0rem 0.2rem 23.4rem rgba(255, 146, 47, 0.15),
+    0px 0.500862px 44.7019px rgba(255, 146, 47, 0.075);
+  border-radius: 0.6rem;
+}
+.itemsinCard {
+  display: flex;
+}
+.howItWorks .card i.fa {
+  display: inline-block;
+  border-radius: 3.8rem;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 0.5em 0.6em;
+}
+.howItWorks .icon {
+  margin-right: 1rem;
+}

@@ -1,0 +1,70 @@
+.btnWithFilled {
+  color: white;
+  border: none;
+}
+.btnWithoutFilled {
+  background-color: var(--white);
+}
+.bookBtn {
+  font-family: "Poppins-medium";
+  background-color: var(--green);
+  font-size: 0.9rem;
+  width: 5.5rem;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+}
+.showMoreBtn {
+  font-family: "Poppins-medium";
+  width: 11rem;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+}
+.btnLarge {
+  background-color: var(--green);
+  font-size: 1.1rem;
+  font-family: "Poppins-medium";
+  width: 14rem;
+  border-radius: 1rem;
+  padding: 1.3rem;
+}
+.btnFilledOrange {
+  background-color: var(--orange);
+}
+
+.btnWithoutOrange {
+  color: var(--orange);
+  border: 0.2rem solid var(--orange);
+}
+
+.btnSquare {
+  width: 16rem;
+  color: var(--orange);
+  border-radius: 0.25rem;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Poppins-medium";
+  letter-spacing: 0.01rem;
+  line-height: 1.5rem;
+  margin: 6rem 0 5rem 0rem;
+}
+.btnMedium {
+  font-size: 0.75rem;
+  width: 9.5rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-family: "Poppins-medium";
+}
+.btn {
+  color: var(--text--color);
+  font-size: 0.7rem;
+  line-height: 0.5rem;
+  font-family: "Poppins-regular";
+  height: 2rem;
+  background-color: var(--white);
+  border: 0.01rem solid var(--border--color);
+  margin-top: 2.2rem;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+}

@@ -1,11 +1,25 @@
-/* constants */
-:root{
-    --orange:#fb9c46;
-    --underline--color:#ff922f;
-    --para--text-color: #90A3B4;
-    --green:#058E6E;
-    --white:#FFFFFF;
-    --card--text-color:#393939;
-    --card--list--color:#8D8D8D;
-
+/* Constants */
+:root {
+  /* Colors */
+  --orange: #fb9c46;
+  --underline--color: #ff922f;
+  --para--text-color: #90a3b4;
+  --green: #058e6e;
+  --white: #ffffff;
+  --card--text-color: #393939;
+  --card--list--color: #8d8d8d;
+  --background--color: #efd8c9;
+  --gradiant--color: #f1bf62;
+  --footer-bg--color: #f2bf62;
+  --review--text--color: #90a3b4;
+  --star--color: #faad13;
+  --designation--text--color: #90a3b4;
+  --pagination--default-color: #e2ecf4;
+  --border--color: #c4c4c4;
+  --footer--icons--color: #f4bb52;
+  --gradiant--orange--color: #ff912e;
+  --review--text--color: #90a3b4;
+  --text--color: #979797;
+  --grey--color: #cccccc;
+  --heading--color: #393939;
 }

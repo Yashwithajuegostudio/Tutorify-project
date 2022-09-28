@@ -1,150 +1,111 @@
-@import url("./font.css");
-@import url("./homePage.css");
 @import url("./constants.css");
+@import url("./font.css");
+@import url("./button.css");
+@import url("./homePage.css");
+@import url("./tutorListPage.css");
+@import url("./mediaQueries.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:ital,wght@0,400;1,500&display=swap");
 
 /*  Global styles section */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background: var(--background-Color);
+  background: var(--background-Color);
 }
 
 /* Header styles section */
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.01rem solid #C4C4C4;
-    ;
-  }
-  
-  nav .logo {
-    font-size: 1.2rem;
-      font-family:'Poppins-bold'; 
-      padding: 2rem 3rem;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 2rem;
-  }
-  nav li{
-    list-style: none;
-    font-family:'Poppins-medium'; 
-    font-weight: 400;
-   }
-  nav ul li {
-    padding: 0 2rem ;
-    border-radius: 5rem;
-    transform: 0.2s ease-in;
-  }
-  nav ul a ,a{
-    color: black;
-    text-decoration: none;
-  }
-  nav .navLinks button , .sideNav button{
-    color: white;
-    width: 6rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    border: none;
-    margin-left: 2rem;
-  }
-  .loginBtn {
-    background:#407F55;
-  }
-  .signUpBtn {
-    background: #FB9C46;
-  
-  }
-  .togglebtn {
-    display: flex;
-    flex-direction: row;
-  }
-  .togglebtn .menuBtn {
-    font-size: 2.5rem;
-    padding: 0.9rem;
-    color: #FB9C46;
-    cursor: pointer;
-  }
-  nav .OpenInAppBtn{
-    margin: 2rem;
-    outline: 0.1rem solid var(--open-in-app-color);
-    border-radius: 0.4rem;
-    color:var(--OpenInAppColor);
-    font-family: "Poppins-light";
-    padding: 0.4rem;
-    font-size: 0.7rem;
-    white-space: nowrap;
-  }
-  .sideNav {
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    overflow-x: hidden;
-    background-color: #FFFFFF;
-   transition: 0.3s ease-in;
-   display: block;
-   padding: 2rem;
-  }
-  .sideNav .navList{
-    display: flex;
-    flex-direction: column;
-  }
-  .sideNav .navBtns{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .sideNav a { 
-    padding: 1.5rem;
-    display: block;
-    transition: 0.3s;
-  }
-  .navBtns label{
-    text-align: center;
-  }
-  .sideNav button {
-    margin: 2rem;
-    width: 10rem;
-  }
-   .fa {
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #FB9C46;
-    font-size: 2rem ! important;
-  }
-  
-  .btns {
-   background-color: blue;
-  }
-  /* responsive nav bar */
-  @media screen and (max-width: 768px) {
-    .menuBtn{
-      display: flex;
-    }
-    nav .navLinks {
-      display: none;
-    }
-    .sideNav {
-      display: none;
-    }
-  }
-  @media screen and (min-width:768px) {
-  .OpenInAppBtn{
-    display: none;
-  }  
-  .menuBtn {
-    display: none;
-  }
-  .sideNav {
-    display: none;
-  }
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  border-bottom: 0.01rem solid var(--border--color);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+nav .logo {
+  font-size: 1.3rem;
+  font-family: "Poppins-sem-ibold";
+  font-weight: normal;
+  padding: 1.5rem 0rem 0.3rem 1.5rem;
+  line-height: 3rem;
+}
+ul {
+  list-style: none;
+}
+.menuIcon i.fa {
+  font-size: 1.3rem;
+  padding: 2.5rem 1.5rem 0.5rem 1.5rem;
+  display: inline-block;
+  color: var(--orange);
+}
+/* Footer section */
+footer {
+  background-color: var(--footer-bg--color);
+  font-family: "DM Sans";
+  width: 100%;
+}
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footerInfo h3,
+.dropdown i.fa {
+  color: var(--white);
+}
+.footerMenu h4,
+i,
+.copyRight,
+.itemInfo {
+  color: var(--white);
+}
+.itemInfo {
+  font-size: 0.75rem;
+}
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem 1rem;
+}
+.copyRight {
+  text-align: center;
+  /* white-space: nowrap; */
+  padding: 4rem 0rem 4rem 0rem;
+}
+.footerInfo h3 {
+  font-size: 1.5rem;
+  font-family: "Poppins-medium";
+}
+.footerInfo i.fa {
+  display: inline-block;
+  border-radius: 3.7rem;
+  background-color: var(--footer--icons--color);
+  padding: 0.6em 0.7em;
+  margin-right: 0.5rem;
+}
+.footerMenu h4 {
+  font-size: 0.87rem;
+  font-family: "Rubik";
+}
+.dropdownColumn {
+  border-top: 0.01rem solid var(--white);
+}
+.bottomBorder {
+  padding-bottom: 1rem;
+  border-bottom: 0.01rem solid var(--white);
+}
+.dropdownColumn ul {
+  display: none;
+}
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 0;
+}

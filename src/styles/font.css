@@ -1,28 +1,26 @@
 /* Font family */
 
 @font-face {
-    font-family: 'Poppins-bold';
-    src: url('/public/assets/fonts/Poppins/poppins-bold.woff2');
+  font-family: "Poppins-bold";
+  src: url("/Tutorify-project/public/assets/fonts/Poppins/poppins-bold.woff2");
 }
 
 @font-face {
-    font-family: 'Poppins-light';
-    src: url('/public/assets/fonts/Poppins/poppins-light.woff2') ;
+  font-family: "Poppins-light";
+  src: url("/Tutorify-project/public/assets/fonts/Poppins/poppins-light.woff2");
 }
 
 @font-face {
-    font-family: 'Poppins-medium';
-    src: url('/public/assets/fonts/Poppins/poppins-medium.woff2');
-
+  font-family: "Poppins-medium";
+  src: url("/Tutorify-project/public/assets/fonts/Poppins/poppins-medium.woff2");
 }
 
 @font-face {
-    font-family: 'Poppins-regular';
-    src: url('/public/assets/fonts/Poppins/poppins-regular.woff2');      
+  font-family: "Poppins-regular";
+  src: url("/Tutorify-project/public/assets/fonts/Poppins/poppins-regular.woff2");
 }
 
 @font-face {
-    font-family: 'Poppinssem-ibold';
-    src: url('/public/assets/fonts/Poppins/poppins-semibold.woff2');
+  font-family: "Poppins-sem-ibold";
+  src: url("/Tutorify-project/public/assets/fonts/Poppins/poppins-semibold.woff2");
 }
-
