@@ -2,21 +2,42 @@
 
 /* responsive nav bar */
 @media screen and (max-width: 768px) {
-    .footer-menu {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .sideNav {
-      display: none;
-    }
-    
-  
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  @media screen and (min-width: 768px) {
-    .sideNav {
-      display: none;
-    }
-    
+  .side-nav {
+    display: none;
   }
-  
+}
+@media screen and (width> 768px) {
+  .side-nav {
+    display: none;
+  }
+}
+@media screen and (width<375px) {
+  /* .heading {
+    white-space: normal;
+  } */
+  .btnsInrow {
+    gap: 0.9rem;
+  }
+  .btn-medium {
+    width: 8.9rem;
+  }
+}
+@media screen and (width < 362px) {
+  .learner {
+    width: 17.8rem;
+  }
+  .triangle {
+    left: 10.2rem;
+  }
+  .column-container .items-in-row {
+    gap: 1.1rem;
+  }
+  .flag {
+    width: 3rem;
+  }
+}

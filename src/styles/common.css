@@ -2,9 +2,11 @@
 @import url("./font.css");
 @import url("./button.css");
 @import url("./homePage.css");
-@import url("./tutorListPage.css");
+@import url("/src/styles/tutorListPage.css");
+@import url("./tutorProfilePage.css");
 @import url("./mediaQueries.css");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:ital,wght@0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito+Sans&family=Poppins:ital,wght@0,400;1,500&family=Rubik:ital@0;1&display=swap");
 
 /*  Global styles section */
 * {
@@ -23,7 +25,7 @@ nav {
   justify-content: space-between;
 }
 .line {
-  border-bottom: 0.01rem solid var(--border--color);
+  border-bottom: 0.12rem solid var(--border--color);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -37,7 +39,7 @@ nav .logo {
 ul {
   list-style: none;
 }
-.menuIcon i.fa {
+.menu-icon i.fa {
   font-size: 1.3rem;
   padding: 2.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
@@ -49,59 +51,59 @@ footer {
   font-family: "DM Sans";
   width: 100%;
 }
-.footerMenu {
+.footer-menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.footerInfo h3,
+.footer-info h3,
 .dropdown i.fa {
   color: var(--white);
 }
-.footerMenu h4,
+.footer-menu h4,
 i,
-.copyRight,
-.itemInfo {
+.copy-right,
+.item-info {
   color: var(--white);
 }
-.itemInfo {
+.item-info {
   font-size: 0.75rem;
 }
-.footerInfo {
+.footer-info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 3rem 2rem 1rem;
 }
-.copyRight {
+.copy-right {
   text-align: center;
   /* white-space: nowrap; */
   padding: 4rem 0rem 4rem 0rem;
 }
-.footerInfo h3 {
+.footer-info h3 {
   font-size: 1.5rem;
   font-family: "Poppins-medium";
 }
-.footerInfo i.fa {
+.footer-info i.fa {
   display: inline-block;
   border-radius: 3.7rem;
   background-color: var(--footer--icons--color);
   padding: 0.6em 0.7em;
   margin-right: 0.5rem;
 }
-.footerMenu h4 {
+.footer-menu h4 {
   font-size: 0.87rem;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
 }
-.dropdownColumn {
+.dropdown-column {
   border-top: 0.01rem solid var(--white);
 }
-.bottomBorder {
+.bottom-border {
   padding-bottom: 1rem;
   border-bottom: 0.01rem solid var(--white);
 }
-.dropdownColumn ul {
+.dropdown-column ul {
   display: none;
 }
 .dropdown {

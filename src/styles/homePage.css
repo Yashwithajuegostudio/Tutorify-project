@@ -14,27 +14,31 @@
   gap: 3rem;
   overflow: hidden;
 }
-.getFreelessons {
+.get-freelessons {
   background: linear-gradient(
-    270.04deg,
+    360.04deg,
     var(--gradiant--color) 0.05%,
     var(--gradiant--orange--color) 97.84%
   );
   border-radius: 0.5rem;
   margin-bottom: 7rem;
   padding-top: 4rem;
+  border-bottom-left-radius: 0rem;
 }
 .row {
   flex: 1;
 }
-.freeLessons .row,
-.bookLessons .row {
+.free-lessons .row,
+.book-lessons .row {
   padding-bottom: 3rem;
 }
-.bookLessons {
+.book-lessons {
   padding-bottom: 0rem;
 }
-.itemsInRow {
+.what-we-offer .items-in-row {
+  padding-bottom: 0.6rem;
+}
+.items-in-row {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
@@ -45,52 +49,51 @@ h2 {
   font-size: 2rem;
   font-family: "Poppins-medium";
 }
-.freeLessons .heading {
+.free-lessons .heading {
   font-family: "Poppins-bold";
   line-height: 3.3rem;
   padding: 1rem 0rem 1.5rem 0rem;
   letter-spacing: 0.035em;
   display: block;
-  white-space: nowrap;
 }
 
-.para {
-  padding: 0.5rem 2rem 0.5rem 0rem;
-}
 .heading {
   letter-spacing: 0.01rem;
 }
-.whatYouGet .para,
-.whatYouGet .heading {
+.what-you-get .para,
+.what-you-get .heading {
   text-align: end;
 }
-.whatYouGet .heading,
-.howItWorks .heading {
+p {
   white-space: nowrap;
 }
-.whatYouGet .row {
+.heading {
+  white-space: nowrap;
+}
+.what-you-get .row {
   margin-bottom: 1.5rem;
 }
-.whatYouGet .para {
+.what-you-get .para {
   padding: 0.5rem 0rem 0rem 1.8rem;
 }
-.whatYouGet li {
+.what-you-get li {
   list-style: disc;
   list-style-position: inside;
+  white-space: nowrap;
 }
-.whatWeOffer {
+.what-we-offer {
   gap: 0.4rem;
 }
-.whatYouGet .textColor {
+.what-you-get .text-color {
   color: var(--green);
 }
-.whatYouGet {
+.what-you-get {
   padding-top: 4rem;
 }
-.orangeTextColor {
+.orange-text-color {
   color: var(--orange);
 }
-.freeLessons .para {
+.free-lessons .para {
   font-size: 0.85rem;
 }
 .para {
@@ -100,23 +103,25 @@ h2 {
   line-height: 2;
   color: var(--para--text-color);
 }
-.eduSmart .heading {
-  white-space: nowrap;
+.edu-smart .heading {
   letter-spacing: 0.035rem;
   display: block;
 }
-.eduSmart {
+.edu-smart {
   gap: 0rem;
   padding-top: 4rem;
 }
-.eduSmart .para {
+.edu-smart .para {
   line-height: 2rem;
+  margin-top: 1rem;
 }
-.getFreelessons .heading,
-.getFreelessons .para {
+.get-freelessons .heading,
+.get-freelessons .para {
   color: var(--white);
 }
-
+.get-freelessons .para {
+  font-family: "Poppins-regular";
+}
 h3 {
   font-size: 1rem;
 }
@@ -126,7 +131,7 @@ h3,
   font-family: "Poppins-medium";
   white-space: nowrap;
 }
-.underline {
+.under-line {
   margin-left: 1.12rem;
 }
 
@@ -135,11 +140,11 @@ img {
   display: inline-block;
 }
 /* Free Lesson section image container design */
-.tutorImageContainer .tutorImage {
+.tutor-image-container .tutor-image {
   display: flex;
   justify-content: right;
 }
-.tutorImageContainer .tutorImage .image {
+.tutor-image-container .tutor-image .image {
   width: 13rem;
   background: linear-gradient(
     139.15deg,
@@ -149,32 +154,32 @@ img {
   );
   border-radius: 12.75rem;
 }
-.tutorImageContainer .container {
+.tutor-image-container .container {
   width: 16rem;
   height: 19rem;
   position: relative;
 }
-.flagList {
+.flag-list {
   position: relative;
   display: block;
 }
-.tutorImageContainer .flag1 {
+.flag1 {
   width: 3rem;
   border-radius: 3rem;
   bottom: 15.8rem;
   left: 2.3rem;
 }
-.tutorImageContainer .flag2 {
+.flag2 {
   width: 3rem;
   bottom: 21.5rem;
   left: 11.2rem;
 }
-.tutorImageContainer .flag3 {
+.flag3 {
   width: 3.5rem;
   bottom: 16rem;
   left: 14.5rem;
 }
-.tutorImageContainer .rectangle {
+.rectangle {
   position: relative;
   width: 6.7rem;
   bottom: 15.4rem;
@@ -182,13 +187,13 @@ img {
   filter: drop-shadow(0px 4px 357px rgba(255, 146, 47, 0.63))
     drop-shadow(0px 0.500862px 44.7019px rgba(255, 146, 47, 0.21));
 }
-.tutorImageContainer .rectangleLabel {
+.rectangle-label {
   width: 4.5rem;
   position: relative;
   bottom: 19rem;
   right: 0.2rem;
 }
-.tutorImageContainer .rectangleBar {
+.rectangle-bar {
   width: 1.2rem;
   position: relative;
   bottom: 20.5rem;
@@ -199,28 +204,28 @@ img {
   width: 1.7rem;
   position: relative;
 }
-.tutorImageContainer .tutor1 {
+.tutor1 {
   bottom: 20.2rem;
   right: 0.4rem;
 }
-.tutorImageContainer .tutor2 {
+.tutor2 {
   bottom: 22.2rem;
   left: 0.4rem;
 }
-.tutorImageContainer .tutor3 {
+.tutor3 {
   bottom: 24.1rem;
   left: 1.3rem;
 }
-.tutorImageContainer .tutor4 {
+.tutor4 {
   bottom: 26.1rem;
   left: 2rem;
 }
 
-.tutorImageContainer .circle {
+.tutor-image-container .circle {
   bottom: 28.2rem;
   left: 2.8rem;
 }
-.tutorImageContainer .countLabel {
+.countLabel {
   color: var(--white);
   font-family: "Poppins-medium";
   position: relative;
@@ -229,28 +234,28 @@ img {
   bottom: 29.8rem;
 }
 /* what We Offer section flag list */
-.columnContainer {
+.column-container {
   width: 28rem;
   display: flex;
   flex-direction: column;
 }
-.columnContainer .itemsInRow {
+.column-container .items-in-row {
   gap: 1.3rem;
 }
-.whatWeOffer .heading {
+.what-we-offer .heading {
   padding: 0.5rem 0 0.5rem 0;
   color: var(--heading--color);
 }
-.flags .flag {
+.flag {
   width: 3.25rem;
 }
 .flags .image6 {
   width: 3.5rem;
 }
-.rightArrow {
+.right-arrow {
   margin-top: 0.2rem;
 }
-.viewAll {
+.view-all {
   font-family: "Nunito Sans";
   color: var(--orange);
   margin-top: 1rem;
@@ -260,7 +265,7 @@ img {
   display: flex;
   gap: 1.5rem;
 }
-.bookLessons .image {
+.book-lessons .image {
   width: 14rem;
   border-radius: 16rem;
   position: relative;
@@ -270,31 +275,28 @@ img {
   display: flex;
   justify-content: right;
 }
-.bookLessons {
+.book-lessons {
   padding-top: 3rem;
 }
-.howItWorks {
-  padding-bottom: 4rem;
-}
-.bookLessons .container {
+.book-lessons .container {
   width: 18rem;
   height: 19rem;
   position: relative;
 }
-.bookLessons .person {
+.book-lessons .person {
   width: 12rem;
   position: relative;
   bottom: 14.35rem;
   left: 1rem;
   z-index: 1;
 }
-.bookLessons .outerCircle {
+.outer-circle {
   position: relative;
   width: 18rem;
   bottom: 32.4rem;
   right: 0rem;
 }
-.bookLessons .card {
+.book-lessons .card {
   position: relative;
   width: 4rem;
   padding: 1.3rem;
@@ -306,50 +308,50 @@ img {
     0rem 0.1rem 1rem rgba(251, 156, 70, 0.0811701);
   border-radius: 0.5rem;
 }
-.bookLessons .heart {
+.heart {
   position: relative;
   width: 0.6em;
   bottom: 51rem;
   left: 0.4rem;
 }
-.bookLessons .lessonText {
+.lesson-text {
   position: relative;
   width: 2em;
   bottom: 51rem;
   right: 0.3rem;
 }
-.bookLessons .smallCircle1 {
+.small-circle1 {
   position: relative;
   width: 11em;
   bottom: 65rem;
   right: 1.5rem;
 }
-.bookLessons .book {
+.book {
   position: relative;
   width: 0.8rem;
   bottom: 72.5rem;
   left: 5.4rem;
 }
-.bookLessons .smallCircle2 {
+.book-lessons .small-circle2 {
   position: relative;
   width: 11em;
   bottom: 67rem;
-  left: 8.6rem;
+  left: 8.75rem;
 }
-.bookLessons .security {
+.book-lessons .security {
   position: relative;
   width: 0.8rem;
   bottom: 74.5rem;
-  left: 15.5rem;
+  left: 15.65rem;
 }
-.bookLessons .learnerImage1 {
+.learner-image1 {
   position: relative;
   width: 11em;
   bottom: 94rem;
-  left: 8.2rem;
+  left: 8.25rem;
   overflow: hidden;
 }
-.bookLessons .learnerImage2 {
+.learner-image2 {
   position: relative;
   width: 13em;
   bottom: 99rem;
@@ -357,73 +359,74 @@ img {
 }
 /* what You Get image container design */
 
-.whatYouGet {
+.what-you-get {
   justify-content: left;
 }
-.whatYouGet .image {
-  width: 16.5rem;
+.what-you-get .image {
+  width: 14rem;
   border-radius: 2rem;
   background-color: var(--background--color);
 }
-.whatYouGet .container {
+.what-you-get .container {
   width: 19rem;
   height: 16rem;
   position: relative;
 }
-.whatYouGet .person {
-  width: 19rem;
+.what-you-get .person {
+  width: 20rem;
   position: relative;
-  bottom: 20rem;
+  bottom: 19rem;
   left: 0rem;
 }
 /* how It Works image conatiner design */
-.howItWorks {
+.how-it-works {
   justify-content: left;
 }
-.howItWorks .heading,
-.bookLessons .heading,
-.getFreelessons .heading {
+.how-it-works .heading,
+.book-lessons .heading,
+.get-freelessons .heading {
   margin-bottom: 0.9rem;
 }
-.getFreelessons .heading {
-  white-space: nowrap;
-  display: block;
-}
-
-.getFreelessons .para {
+.get-freelessons .para {
   padding: 1rem 0rem 1rem 0rem;
 }
-.howItWorks .learner {
+.learner {
   display: flex;
   justify-content: flex-start;
-  width: 19.5rem;
+  width: 17.6rem;
   border-radius: 5rem;
 }
-.howItWorks .container {
+.how-it-works .container {
   width: 20rem;
   height: 14rem;
   position: relative;
 }
-.howItWorks .videoIconCircle {
+.video-icon-circle {
   width: 2.5rem;
   position: relative;
-  bottom: 10rem;
-  left: 9.5rem;
+  bottom: 8.8rem;
+  left: 8.2rem;
 }
-.howItWorks .videoIcon {
+.video-icon {
   width: 0.8rem;
   position: relative;
-  bottom: 12rem;
-  left: 10.4rem;
+  bottom: 10.8rem;
+  left: 9.1rem;
 }
-.howItWorks .triangle {
-  width: 10rem;
+.triangle {
+  width: 8rem;
   position: relative;
-  bottom: 12rem;
+  bottom: 10rem;
   left: 10rem;
 }
+.note-line {
+  position: relative;
+  width: 4.6rem;
+  bottom: 16.3rem;
+  left: 12rem;
+}
 /* review design styles */
-.tutorReview {
+.tutor-review {
   display: flex;
   width: 23rem;
   margin-bottom: 2rem;
@@ -441,46 +444,46 @@ img {
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
-.profileContainer {
+.profile-container {
   display: flex;
   justify-content: space-between;
 }
-.tutorProfile .tutorImage {
+.tutor-profile .tutor-image {
   width: 2.4rem;
 }
-.tutorProfile {
+.tutor-profile {
   display: flex;
   gap: 1rem;
 }
-.tutorProfile label {
+.tutor-profile label {
   color: var(--orange);
   font-size: 0.7rem;
   font-family: "Poppins-medium";
 }
-.tutorProfile p {
+.tutor-profile p {
   color: var(--designation--text--color);
   font-family: "Poppins-medium";
   font-size: 0.5rem;
   margin-bottom: 1rem;
 }
 .quote {
-  width: 3.5rem;
+  width: 1.3rem;
 }
 .star i.fa {
   color: var(--star--color);
-  margin-left: 0.3rem;
+  margin-right: 0.4rem;
   font-size: 0.85rem;
 }
-.paginationIndicator i.fa {
+.pagination-indicator i.fa {
   color: var(--pagination--default-color);
   margin-left: 0.3rem;
   font-size: 0.5rem;
 }
-.paginationIndicator i.fa.active {
+.pagination-indicator i.fa.active {
   color: var(--orange);
 }
 
-.tutorProfile .circle {
+.tutor-profile .circle {
   width: 1.5rem;
   position: relative;
   left: 4rem;
@@ -492,45 +495,45 @@ img {
   border-radius: 3.8rem;
   background-color: var(--orange);
   color: var(--white);
-  padding: 0.12em 0.45em;
+  padding: 0.13em 0.45em;
 }
 /* get Free lessons  design styles*/
-.getFreelessons .smileEmoji {
+.smile-emoji {
   font-size: 2rem;
 }
-.studentImageList {
+.student-imagelist {
   align-items: flex-start;
   position: relative;
 }
-.studentImageList .student1 {
+.student1 {
   position: absolute;
   left: 0rem;
 }
-.studentImageList .student2 {
+.student2 {
   position: absolute;
-  left: 1.5rem;
+  left: 1.7rem;
 }
-.studentImageList .student3 {
+.student3 {
   position: absolute;
-  left: 3rem;
+  left: 3.5rem;
 }
-.studentImageList .student4 {
+.student4 {
   position: absolute;
-  left: 4.5rem;
+  left: 5.2rem;
 }
-.studentImageList .student5 {
+.student5 {
   position: absolute;
-  left: 6rem;
+  left: 6.8rem;
 }
-.studentImageList .text {
+.text {
   position: absolute;
   padding-top: 0.7rem;
   font-size: 0.75rem;
   color: var(--white);
-  font-family: "Poppins-light";
+  font-family: "Poppins-regular";
   text-underline-position: auto;
   text-decoration: underline;
-  left: 9.5rem;
+  left: 10.2rem;
 }
 /* Fourth section cards style */
 .card {
@@ -547,8 +550,12 @@ img {
 }
 .card input {
   accent-color: var(--green);
+  border: none;
+  outline: none;
 }
-.card .greenInput {
+.card .green-input {
+  display: flex;
+  justify-content: center;
   background-color: var(--green);
   width: 1.7rem;
   height: 1.7rem;
@@ -560,6 +567,7 @@ img {
   font-family: "Poppins-medium";
   color: var(--card--text-color);
   font-size: 0.75rem;
+  white-space: nowrap;
 }
 .card ul {
   color: var(--card--list--color);
@@ -567,37 +575,38 @@ img {
   font-family: "Poppins-light";
   line-height: 1.2rem;
 }
-.itemsIncol {
+.items-in-col {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 /* how It Works section cards style */
-.howItWorks label {
+.how-it-works label {
   font-family: "Poppins-light";
   font-size: 0.75rem;
   color: var(--orange);
 }
-.howItWorks .card p {
+.how-it-works .card p {
   color: var(--card--list--color);
   font-family: "Poppins-light";
   font-size: 0.6rem;
 }
-.howItWorks .card {
+.how-it-works .card {
   box-shadow: 0rem 0.2rem 23.4rem rgba(255, 146, 47, 0.15),
     0px 0.500862px 44.7019px rgba(255, 146, 47, 0.075);
   border-radius: 0.6rem;
 }
-.itemsinCard {
+.items-in-card {
   display: flex;
 }
-.howItWorks .card i.fa {
+.how-it-works .card i.fa {
   display: inline-block;
   border-radius: 3.8rem;
   background-color: var(--orange);
   color: var(--white);
   padding: 0.5em 0.6em;
+  margin-top: 0.25rem;
 }
-.howItWorks .icon {
+.how-it-works .icon {
   margin-right: 1rem;
 }
